@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anaAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="964.0" style="-fx-background-color: purple;" stylesheets="@../../../../../../target/java/still.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guideneme1.GUICode.GirisPanel">
+   <children>
+      <Pane layoutX="50.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 50; -fx-background-color: Black;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="98.0" layoutY="64.0" prefHeight="51.0" prefWidth="188.0" text="Admin Paneli" textFill="#ff02d9">
+               <font>
+                  <Font name="Elephant" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="kullaniciAdi" layoutX="98.0" layoutY="131.0" prefHeight="27.0" prefWidth="188.0" promptText="Kullanıcı adı">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="sifre" layoutX="98.0" layoutY="171.0" prefHeight="23.0" prefWidth="188.0" promptText="Sİfre">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="admingirButon" layoutX="128.0" layoutY="217.0" onAction="#admingirisEkran" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: purple; -fx-background-radius: 50;" text="Sisteme Gir" textFill="#ff00e5">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="528.0" layoutY="64.0" prefHeight="51.0" prefWidth="188.0" text="Firma Paneli" textFill="#ff02d9">
+               <font>
+                  <Font name="Elephant" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="kullaniciAdi2" layoutX="528.0" layoutY="131.0" prefHeight="27.0" prefWidth="188.0" promptText="Kullanıcı adı">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="sifre2" layoutX="528.0" layoutY="171.0" prefHeight="23.0" prefWidth="188.0" promptText="Sİfre">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="companygirButon" layoutX="564.0" layoutY="217.0" onAction="#companygirisEkran" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: purple; -fx-background-radius: 50;" text="Sisteme Gir" textFill="#ff00e5">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="KullanıcıButon" layoutX="335.0" layoutY="417.0" onAction="#ekranDegis3" prefHeight="59.0" prefWidth="194.0" style="-fx-background-color: purple; -fx-background-radius: 50;" text="Bilet Ara" textFill="#ff00bb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

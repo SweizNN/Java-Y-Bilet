@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ucakAnchor" prefHeight="699.0" prefWidth="964.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guideneme1.GUICode.CompanyPanel">
+   <children>
+      <Pane layoutX="50.0" layoutY="30.0" prefHeight="557.0" prefWidth="775.0" style="-fx-background-color: black; -fx-background-radius: 50;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="353.0" layoutY="32.0" text="Ucak Ekranı" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="ucakID" focusColor="#dd00ff" layoutX="357.0" layoutY="103.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <JFXButton layoutX="391.0" layoutY="559.0" onAction="#geriGel2" text="Geri Gel" textFill="#f200ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ekleButon" layoutX="323.0" layoutY="362.0" onAction="#ucakEkle" text="Ekle" textFill="#ff00ea">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="silButon" layoutX="496.0" layoutY="362.0" onAction="#ucakSil" text="Sil" textFill="#ff00ea">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextArea fx:id="ucakkapasite" focusColor="#dd00ff" layoutX="352.0" layoutY="285.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <Label layoutX="395.0" layoutY="91.0" text="Ucak ID giriniz:" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="372.0" layoutY="273.0" text="Ucak kapasitesi giriniz" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="123.0" layoutY="411.0" text="Pilot Maası" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="pilotsoforMaas" focusColor="#dd00ff" layoutX="69.0" layoutY="440.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <JFXButton layoutX="105.0" layoutY="493.0" onAction="#ucakmaasDegis" text="Degistir" textFill="#ff00ea">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="664.0" layoutY="409.0" text="Muavin Maası" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="ucakmuavinMaas" focusColor="#dd00ff" layoutX="617.0" layoutY="440.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <JFXButton layoutX="653.0" layoutY="493.0" onAction="#ucakmaasDegis" text="Degistir" textFill="#ff00ea">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextArea fx:id="ucakseferAdı" focusColor="#dd00ff" layoutX="352.0" layoutY="194.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <Label layoutX="377.0" layoutY="171.0" text="Ucak seferi secin( 5-6)" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

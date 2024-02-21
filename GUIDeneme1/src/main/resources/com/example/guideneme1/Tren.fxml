@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="trenAnchor" prefHeight="699.0" prefWidth="964.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guideneme1.GUICode.CompanyPanel">
+   <children>
+      <Pane layoutX="50.0" layoutY="30.0" prefHeight="557.0" prefWidth="775.0" style="-fx-background-color: black; -fx-background-radius: 50;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="353.0" layoutY="32.0" text="Tren Ekranı" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="trenID" focusColor="#dd00ff" layoutX="357.0" layoutY="103.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <JFXButton layoutX="391.0" layoutY="559.0" onAction="#geriGel3" text="Geri Gel" textFill="#f200ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ekleButon" layoutX="323.0" layoutY="362.0" onAction="#trenEkle" text="Ekle" textFill="#ff00ea">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="silButon" layoutX="496.0" layoutY="362.0" onAction="#trenSil" text="Sil" textFill="#ff00ea">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextArea fx:id="trenkapasite" focusColor="#dd00ff" layoutX="352.0" layoutY="285.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <Label layoutX="395.0" layoutY="91.0" text="Tren ID giriniz:" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="372.0" layoutY="273.0" text="Tren kapasitesi giriniz" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="426.0" text="Tren sofor maas" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="trensoforMaas" focusColor="#dd00ff" layoutX="47.0" layoutY="456.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <Label layoutX="625.0" layoutY="426.0" text="Tren muavin maas" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="trenmuavinMaas" focusColor="#dd00ff" layoutX="589.0" layoutY="456.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <JFXButton layoutX="91.0" layoutY="506.0" onAction="#trenmaasDegis" text="Degistir" textFill="#ff00ea">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="640.0" layoutY="506.0" onAction="#trenmaasDegis" text="Degistir" textFill="#ff00ea">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextArea fx:id="trenseferAdı" focusColor="#dd00ff" layoutX="357.0" layoutY="191.0" prefHeight="28.0" prefWidth="160.0" unFocusColor="RED" />
+            <Label layoutX="377.0" layoutY="168.0" prefHeight="12.0" prefWidth="107.0" text="Tren seferi secin(1-2)" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="964.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guideneme1.GUICode.AdminPanel">
+   <children>
+      <Pane layoutX="50.0" layoutY="30.0" prefHeight="565.0" prefWidth="822.0" style="-fx-background-radius: 50; -fx-background-color: black;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label alignment="CENTER" layoutX="65.0" layoutY="57.0" prefHeight="35.0" prefWidth="129.0" text="Sirket Ekleme" textFill="#ff00be">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="eklesirketAd" layoutX="44.0" layoutY="117.0" prefHeight="25.0" prefWidth="185.0" promptText="Eklenecek Sirket adı">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="sirketGosterButon" alignment="CENTER" layoutX="355.0" layoutY="55.0" onAction="#sirketGoster" prefHeight="38.0" prefWidth="192.0" style="-fx-background-radius: 50; -fx-background-color: purple;" text="Sirketleri Gösterme" textFill="#ff03ba">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <Label fx:id="sirketler" alignment="CENTER" layoutX="342.0" layoutY="124.0" prefHeight="104.0" prefWidth="205.0" textFill="#ff00b7">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="668.0" layoutY="57.0" prefHeight="35.0" prefWidth="129.0" text="Sirket Silme" textFill="#ff00be">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="silSirket" layoutX="640.0" layoutY="117.0" prefHeight="25.0" prefWidth="185.0" promptText="Silinecek Sirket adı">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="eklesirketSifre" layoutX="44.0" layoutY="169.0" prefHeight="25.0" prefWidth="185.0" promptText="Eklenecek Sirket Sifresi">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="hizmetBedelButon" alignment="CENTER" layoutX="53.0" layoutY="369.0" onAction="#hizmetBedelCost" prefHeight="38.0" prefWidth="192.0" style="-fx-background-radius: 50; -fx-background-color: purple;" text="Hizmet bedeli " textFill="#ff03ba">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="ekleButon" alignment="CENTER" layoutX="72.0" layoutY="215.0" onAction="#sirketEkle" prefHeight="38.0" prefWidth="115.0" style="-fx-background-radius: 50; -fx-background-color: purple;" text="Ekle" textFill="#ff03ba">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="silButon" alignment="CENTER" layoutX="675.0" layoutY="157.0" onAction="#sirketSil" prefHeight="38.0" prefWidth="115.0" style="-fx-background-radius: 50; -fx-background-color: purple;" text="Sil" textFill="#ff03ba">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="362.0" layoutY="526.0" onAction="#ekranDegis" prefHeight="25.0" prefWidth="142.0" text="Geri gel" textFill="#ff00d4">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="hizmetBedel" layoutX="57.0" layoutY="428.0" prefHeight="25.0" prefWidth="185.0" promptText="Hizmet Bedeli">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Label fx:id="hizmetBedelLabel" alignment="CENTER" layoutX="64.0" layoutY="495.0" prefHeight="35.0" prefWidth="159.0" textFill="#ff00d9">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

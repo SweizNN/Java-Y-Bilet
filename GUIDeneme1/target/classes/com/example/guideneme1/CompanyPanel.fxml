@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="companyAnchor" prefHeight="699.0" prefWidth="964.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guideneme1.GUICode.CompanyPanel">
+   <children>
+      <Pane layoutX="50.0" layoutY="30.0" prefHeight="699.0" prefWidth="964.0" style="-fx-background-radius: 50; -fx-background-color: black;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="116.0" layoutY="41.0" prefHeight="23.0" prefWidth="204.0" text="Araç Ekleme-Silme" textFill="#ff00f6">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="524.0" layoutY="41.0" prefHeight="23.0" prefWidth="204.0" text="Sefer Ekleme-Silme" textFill="#ff00f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="379.0" layoutY="536.0" onAction="#geriGel" text="Geri Gel" textFill="#ff00d9">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="otobusButon" layoutX="102.0" layoutY="120.0" onAction="#ekranDegis2" style="-fx-border-color: purple; -fx-border-width: 3;" text="Otobus" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="uçakButon" layoutX="110.0" layoutY="211.0" onAction="#ekranDegis3" style="-fx-border-color: purple; -fx-border-width: 3;" text="Uçak " textFill="#f800ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="trenButon" layoutX="115.0" layoutY="298.0" onAction="#ekranDegis4" style="-fx-border-color: purple; -fx-border-width: 3;" text="Tren" textFill="#f705ec">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="458.0" layoutY="232.0" onAction="#seferOlustur" style="-fx-border-color: purple; -fx-border-width: 3;" text="Sefer Ekle" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="663.0" layoutY="232.0" onAction="#seferSil" style="-fx-border-color: purple; -fx-border-width: 3;" text="Sefer Sil" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXTextArea fx:id="seferID" focusColor="WHITE" layoutX="510.0" layoutY="153.0" prefHeight="53.0" prefWidth="234.0" unFocusColor="#ff00ea" />
+            <Label alignment="CENTER" layoutX="502.0" layoutY="108.0" prefHeight="23.0" prefWidth="249.0" text="Seferi giriniz" textFill="#ff00f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="331.0" layoutY="355.0" style="-fx-border-color: purple; -fx-border-width: 3;" text="Kar-Zarar Hesabı" textFill="#fb00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="576.0" layoutY="333.0" prefHeight="17.0" prefWidth="174.0" text="Doluluk Oranı" textFill="#c408a9">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <JFXSlider fx:id="dolulukOran" layoutX="570.0" layoutY="377.0" showTickLabels="true" />
+            <Label fx:id="karzarar" alignment="CENTER" layoutX="270.0" layoutY="445.0" prefHeight="77.0" prefWidth="325.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
